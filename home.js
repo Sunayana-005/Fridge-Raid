@@ -1,5 +1,90 @@
 // Recipe Database (a small, in-memory collection)
 const recipes = [
+    // Breakfast
+    {
+        name: "Scrambled Eggs on Toast",
+        ingredients: ["eggs", "bread", "butter", "milk", "salt", "pepper"],
+        instructions: "Whisk eggs with a splash of milk, salt, and pepper. Scramble in a pan with butter. Serve on toasted bread.",
+        diet: "vegetarian",
+        mealType: "breakfast",
+        image: "https://source.unsplash.com/400x300/?eggs"
+    },
+    {
+        name: "Banana Pancakes",
+        ingredients: ["banana", "eggs", "flour", "milk", "baking powder", "syrup"],
+        instructions: "Mash banana, mix with eggs, flour, milk, and baking powder. Cook pancakes on a skillet. Serve with syrup.",
+        diet: "vegetarian",
+        mealType: "breakfast",
+        image: "https://source.unsplash.com/400x300/?pancakes"
+    },
+    {
+        name: "Oatmeal Bowl",
+        ingredients: ["oats", "milk", "banana", "honey", "berries"],
+        instructions: "Cook oats in milk. Top with sliced banana, berries, and drizzle with honey.",
+        diet: "vegetarian",
+        mealType: "breakfast",
+        image: "https://source.unsplash.com/400x300/?oatmeal"
+    },
+    {
+        name: "Avocado Toast",
+        ingredients: ["bread", "avocado", "salt", "pepper", "lemon"],
+        instructions: "Toast bread. Mash avocado with salt, pepper, and lemon juice. Spread on toast.",
+        diet: "vegan",
+        mealType: "breakfast",
+        image: "https://source.unsplash.com/400x300/?avocado-toast"
+    },
+    {
+        name: "Berry Yogurt Parfait",
+        ingredients: ["yogurt", "granola", "berries", "honey"],
+        instructions: "Layer yogurt, granola, and berries in a glass. Top with honey.",
+        diet: "vegetarian",
+        mealType: "breakfast",
+        image: "https://source.unsplash.com/400x300/?parfait"
+    },
+
+    // Lunch
+    {
+        name: "Quick Quesadillas",
+        ingredients: ["tortillas", "cheese", "chicken", "salsa"],
+        instructions: "Place a tortilla in a pan. Layer with cheese, shredded chicken, and salsa. Top with another tortilla and cook until golden on both sides.",
+        diet: "",
+        mealType: "lunch",
+        image: "https://source.unsplash.com/400x300/?quesadilla"
+    },
+    {
+        name: "Tuna Salad Sandwich",
+        ingredients: ["tuna", "mayonnaise", "bread", "lettuce", "onion"],
+        instructions: "Mix tuna, mayonnaise, and finely chopped onion. Spread on bread and top with lettuce.",
+        diet: "",
+        mealType: "lunch",
+        image: "https://source.unsplash.com/400x300/?sandwich"
+    },
+    {
+        name: "Grilled Cheese Sandwich",
+        ingredients: ["bread", "cheese", "butter"],
+        instructions: "Butter bread slices, add cheese, grill until golden brown.",
+        diet: "vegetarian",
+        mealType: "lunch",
+        image: "https://source.unsplash.com/400x300/?grilled-cheese"
+    },
+    {
+        name: "Veggie Wrap",
+        ingredients: ["tortilla", "lettuce", "tomato", "cucumber", "hummus"],
+        instructions: "Spread hummus on tortilla, add veggies, wrap and slice.",
+        diet: "vegan",
+        mealType: "lunch",
+        image: "https://source.unsplash.com/400x300/?veggie-wrap"
+    },
+    {
+        name: "Chicken Caesar Salad",
+        ingredients: ["chicken", "lettuce", "croutons", "parmesan", "caesar dressing"],
+        instructions: "Grill chicken, toss with lettuce, croutons, parmesan, and dressing.",
+        diet: "",
+        mealType: "lunch",
+        image: "https://source.unsplash.com/400x300/?caesar-salad"
+    },
+
+    // Dinner
     {
         name: "Simple Tomato Pasta",
         ingredients: ["pasta", "tomatoes", "garlic", "onion", "olive oil"],
@@ -17,28 +102,70 @@ const recipes = [
         image: "https://source.unsplash.com/400x300/?chicken"
     },
     {
-        name: "Scrambled Eggs on Toast",
-        ingredients: ["eggs", "bread", "butter", "milk", "salt", "pepper"],
-        instructions: "Whisk eggs with a splash of milk, salt, and pepper. Scramble in a pan with butter. Serve on toasted bread.",
+        name: "Vegetable Curry",
+        ingredients: ["potato", "carrot", "peas", "onion", "curry powder", "coconut milk"],
+        instructions: "Sauté onion, add veggies and curry powder. Pour coconut milk and simmer until veggies are tender.",
+        diet: "vegan",
+        mealType: "dinner",
+        image: "https://source.unsplash.com/400x300/?curry"
+    },
+    {
+        name: "Paneer Tikka Masala",
+        ingredients: ["paneer", "tomatoes", "onion", "cream", "spices"],
+        instructions: "Cook paneer cubes, simmer with tomato-onion gravy and spices. Add cream at the end.",
         diet: "vegetarian",
-        mealType: "breakfast",
-        image: "https://source.unsplash.com/400x300/?eggs"
+        mealType: "dinner",
+        image: "https://source.unsplash.com/400x300/?paneer"
     },
     {
-        name: "Quick Quesadillas",
-        ingredients: ["tortillas", "cheese", "chicken", "salsa"],
-        instructions: "Place a tortilla in a pan. Layer with cheese, shredded chicken, and salsa. Top with another tortilla and cook until golden on both sides.",
+        name: "Grilled Salmon & Veggies",
+        ingredients: ["salmon", "lemon", "broccoli", "carrot", "olive oil"],
+        instructions: "Grill salmon with lemon and olive oil. Serve with steamed broccoli and carrots.",
         diet: "",
-        mealType: "lunch",
-        image: "https://source.unsplash.com/400x300/?quesadilla"
+        mealType: "dinner",
+        image: "https://source.unsplash.com/400x300/?salmon"
+    },
+
+    // Snacks
+    {
+        name: "Fruit Salad",
+        ingredients: ["apple", "banana", "orange", "grapes", "honey"],
+        instructions: "Chop all fruits. Mix in a bowl and drizzle with honey.",
+        diet: "vegan",
+        mealType: "snack",
+        image: "https://source.unsplash.com/400x300/?fruit-salad"
     },
     {
-        name: "Tuna Salad Sandwich",
-        ingredients: ["tuna", "mayonnaise", "bread", "lettuce", "onion"],
-        instructions: "Mix tuna, mayonnaise, and finely chopped onion. Spread on bread and top with lettuce.",
-        diet: "",
-        mealType: "lunch",
-        image: "https://source.unsplash.com/400x300/?sandwich"
+        name: "Veggie Sticks & Hummus",
+        ingredients: ["carrot", "cucumber", "bell pepper", "hummus"],
+        instructions: "Slice veggies into sticks. Serve with hummus for dipping.",
+        diet: "vegan",
+        mealType: "snack",
+        image: "https://source.unsplash.com/400x300/?hummus"
+    },
+    {
+        name: "Peanut Butter Energy Balls",
+        ingredients: ["peanut butter", "oats", "honey", "chia seeds"],
+        instructions: "Mix all ingredients, roll into balls, chill before serving.",
+        diet: "vegetarian",
+        mealType: "snack",
+        image: "https://source.unsplash.com/400x300/?energy-balls"
+    },
+    {
+        name: "Yogurt Parfait",
+        ingredients: ["yogurt", "granola", "berries", "honey"],
+        instructions: "Layer yogurt, granola, and berries in a glass. Top with honey.",
+        diet: "vegetarian",
+        mealType: "snack",
+        image: "https://source.unsplash.com/400x300/?parfait"
+    },
+    {
+        name: "Roasted Chickpeas",
+        ingredients: ["chickpeas", "olive oil", "paprika", "salt"],
+        instructions: "Toss chickpeas with oil and spices. Roast until crispy.",
+        diet: "vegan",
+        mealType: "snack",
+        image: "https://source.unsplash.com/400x300/?chickpeas"
     }
 ];
 
