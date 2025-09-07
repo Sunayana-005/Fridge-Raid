@@ -42,7 +42,7 @@
             <div>
                 <h2 class="text-xl font-semibold text-indigo-800 mb-3">Ingredients</h2>
                 <div class="flex items-center gap-2 mb-8">
-                    <input type="text" id="ingredient-input" placeholder="e.g., paneer, pasta"
+                    <input type="text" id="ingredient-input" placeholder="e.g., paneer, bread"
                         class="flex-1 p-2 rounded-lg border border-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white shadow"
                         onkeydown="if(event.key === 'Enter') { document.getElementById('add-ingredient-btn').click(); }">
                     <button id="add-ingredient-btn" class="px-4 py-2 bg-indigo-600 text-white font-semibold rounded-lg shadow hover:bg-indigo-700">Add</button>
@@ -54,7 +54,6 @@
                 <div class="flex flex-col gap-3">
                     <select id="diet-select" class="p-2 rounded-lg border border-indigo-200 focus:outline-none focus:ring-2 focus:ring-indigo-400 bg-white shadow w-full max-w-[400px]">
                         <option value="" disabled selected>Dietary Preference</option>
-                        <option value="vegan">Vegan</option>
                         <option value="gluten-free">Gluten-Free</option>
                         <option value="dairy-free">Dairy-Free</option>
                     </select>

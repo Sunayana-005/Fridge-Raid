@@ -1,175 +1,3 @@
-// Recipe Database (a small, in-memory collection)
-const recipes = [
-    // Breakfast
-    {
-        name: "Scrambled Eggs on Toast",
-        ingredients: ["eggs", "bread", "butter", "milk", "salt", "pepper"],
-        instructions: "Whisk eggs with a splash of milk, salt, and pepper. Scramble in a pan with butter. Serve on toasted bread.",
-        diet: "vegetarian",
-        mealType: "breakfast",
-        image: "https://placehold.co/400x300?text=Scrambled+Eggs"
-    },
-    {
-        name: "Banana Pancakes",
-        ingredients: ["banana", "eggs", "flour", "milk", "baking powder", "syrup"],
-        instructions: "Mash banana, mix with eggs, flour, milk, and baking powder. Cook pancakes on a skillet. Serve with syrup.",
-        diet: "vegetarian",
-        mealType: "breakfast",
-        image: "https://placehold.co/400x300?text=Banana+Pancakes"
-    },
-    {
-        name: "Oatmeal Bowl",
-        ingredients: ["oats", "milk", "banana", "honey", "berries"],
-        instructions: "Cook oats in milk. Top with sliced banana, berries, and drizzle with honey.",
-        diet: "vegetarian",
-        mealType: "breakfast",
-        image: "https://placehold.co/400x300?text=Oatmeal+Bowl"
-    },
-    {
-        name: "Avocado Toast",
-        ingredients: ["bread", "avocado", "salt", "pepper", "lemon"],
-        instructions: "Toast bread. Mash avocado with salt, pepper, and lemon juice. Spread on toast.",
-        diet: "vegan",
-        mealType: "breakfast",
-        image: "https://placehold.co/400x300?text=Avocado+Toast"
-    },
-    {
-        name: "Berry Yogurt Parfait",
-        ingredients: ["yogurt", "granola", "berries", "honey"],
-        instructions: "Layer yogurt, granola, and berries in a glass. Top with honey.",
-        diet: "vegetarian",
-        mealType: "breakfast",
-        image: "https://placehold.co/400x300?text=Yogurt+Parfait"
-    },
-
-    // Lunch
-    {
-        name: "Quick Quesadillas",
-        ingredients: ["tortillas", "cheese", "chicken", "salsa"],
-        instructions: "Place a tortilla in a pan. Layer with cheese, shredded chicken, and salsa. Top with another tortilla and cook until golden on both sides.",
-        diet: "",
-        mealType: "lunch",
-        image: "https://placehold.co/400x300?text=Quesadillas"
-    },
-    {
-        name: "Tuna Salad Sandwich",
-        ingredients: ["tuna", "mayonnaise", "bread", "lettuce", "onion"],
-        instructions: "Mix tuna, mayonnaise, and finely chopped onion. Spread on bread and top with lettuce.",
-        diet: "",
-        mealType: "lunch",
-        image: "https://placehold.co/400x300?text=Tuna+Sandwich"
-    },
-    {
-        name: "Grilled Cheese Sandwich",
-        ingredients: ["bread", "cheese", "butter"],
-        instructions: "Butter bread slices, add cheese, grill until golden brown.",
-        diet: "vegetarian",
-        mealType: "lunch",
-        image: "https://placehold.co/400x300?text=Grilled+Cheese"
-    },
-    {
-        name: "Veggie Wrap",
-        ingredients: ["tortilla", "lettuce", "tomato", "cucumber", "hummus"],
-        instructions: "Spread hummus on tortilla, add veggies, wrap and slice.",
-        diet: "vegan",
-        mealType: "lunch",
-        image: "https://placehold.co/400x300?text=Veggie+Wrap"
-    },
-    {
-        name: "Chicken Caesar Salad",
-        ingredients: ["chicken", "lettuce", "croutons", "parmesan", "caesar dressing"],
-        instructions: "Grill chicken, toss with lettuce, croutons, parmesan, and dressing.",
-        diet: "",
-        mealType: "lunch",
-        image: "https://placehold.co/400x300?text=Caesar+Salad"
-    },
-
-    // Dinner
-    {
-        name: "Simple Tomato Pasta",
-        ingredients: ["pasta", "tomatoes", "garlic", "onion", "olive oil"],
-        instructions: "Cook pasta. Sauté chopped garlic and onion in olive oil. Add diced tomatoes and simmer. Mix with pasta.",
-        diet: "vegetarian",
-        mealType: "dinner",
-        image: "https://placehold.co/400x300?text=Tomato+Pasta"
-    },
-    {
-        name: "Chicken Stir-fry",
-        ingredients: ["chicken", "rice", "broccoli", "soy sauce", "ginger"],
-        instructions: "Cook rice. Stir-fry chicken and broccoli. Add soy sauce and grated ginger. Serve over rice.",
-        diet: "",
-        mealType: "dinner",
-        image: "https://placehold.co/400x300?text=Chicken+Stir-fry"
-    },
-    {
-        name: "Vegetable Curry",
-        ingredients: ["potato", "carrot", "peas", "onion", "curry powder", "coconut milk"],
-        instructions: "Sauté onion, add veggies and curry powder. Pour coconut milk and simmer until veggies are tender.",
-        diet: "vegan",
-        mealType: "dinner",
-        image: "https://placehold.co/400x300?text=Vegetable+Curry"
-    },
-    {
-        name: "Paneer Tikka Masala",
-        ingredients: ["paneer", "tomatoes", "onion", "cream", "spices"],
-        instructions: "Cook paneer cubes, simmer with tomato-onion gravy and spices. Add cream at the end.",
-        diet: "vegetarian",
-        mealType: "dinner",
-        image: "https://placehold.co/400x300?text=Paneer+Tikka"
-    },
-    {
-        name: "Grilled Salmon & Veggies",
-        ingredients: ["salmon", "lemon", "broccoli", "carrot", "olive oil"],
-        instructions: "Grill salmon with lemon and olive oil. Serve with steamed broccoli and carrots.",
-        diet: "",
-        mealType: "dinner",
-        image: "https://placehold.co/400x300?text=Grilled+Salmon"
-    },
-
-    // Snacks
-    {
-        name: "Fruit Salad",
-        ingredients: ["apple", "banana", "orange", "grapes", "honey"],
-        instructions: "Chop all fruits. Mix in a bowl and drizzle with honey.",
-        diet: "vegan",
-        mealType: "snack",
-        image: "https://placehold.co/400x300?text=Fruit+Salad"
-    },
-    {
-        name: "Veggie Sticks & Hummus",
-        ingredients: ["carrot", "cucumber", "bell pepper", "hummus"],
-        instructions: "Slice veggies into sticks. Serve with hummus for dipping.",
-        diet: "vegan",
-        mealType: "snack",
-        image: "https://placehold.co/400x300?text=Veggie+Sticks"
-    },
-    {
-        name: "Peanut Butter Energy Balls",
-        ingredients: ["peanut butter", "oats", "honey", "chia seeds"],
-        instructions: "Mix all ingredients, roll into balls, chill before serving.",
-        diet: "vegetarian",
-        mealType: "snack",
-        image: "https://placehold.co/400x300?text=Energy+Balls"
-    },
-    {
-        name: "Yogurt Parfait",
-        ingredients: ["yogurt", "granola", "berries", "honey"],
-        instructions: "Layer yogurt, granola, and berries in a glass. Top with honey.",
-        diet: "vegetarian",
-        mealType: "snack",
-        image: "https://placehold.co/400x300?text=Yogurt+Parfait"
-    },
-    {
-        name: "Roasted Chickpeas",
-        ingredients: ["chickpeas", "olive oil", "paprika", "salt"],
-        instructions: "Toss chickpeas with oil and spices. Roast until crispy.",
-        diet: "vegan",
-        mealType: "snack",
-        image: "https://placehold.co/400x300?text=Roasted+Chickpeas"
-    }
-];
-
-// Global state and element references
 let userIngredients = [];
 const ingredientInput = document.getElementById('ingredient-input');
 const addIngredientBtn = document.getElementById('add-ingredient-btn');
@@ -308,9 +136,9 @@ const findRecipes = () => {
                         </span>`;
                     }).join('')}
                 </div>
-                <div class="flex gap-2 mt-2">
-                    <button onclick="showRecipeModal(${idx})" class="px-3 py-1 rounded-full text-sm bg-blue-200 hover:bg-blue-300 transition-colors duration-200">View Details</button>
-                    <button onclick="toggleFavorite('${recipe.name}', this)" class="px-3 py-1 rounded-full text-sm ${isFavorite ? 'bg-yellow-300' : 'bg-gray-200'} hover:bg-yellow-200 transition-colors duration-200">${isFavorite ? '★' : '☆'} Favorite</button>
+                <div class="flex w-full gap-4 mt-2">
+                    <button onclick="showRecipeModal(${idx})" class="w-1/2 px-6 py-3 rounded-xl text-base font-semibold bg-blue-200 hover:bg-blue-300 transition-colors duration-200">View Details</button>
+                    <button onclick="toggleFavorite('${recipe.name}', this)" class="w-1/2 px-6 py-3 rounded-xl text-base ${isFavorite ? 'bg-yellow-300' : 'bg-gray-200'} hover:bg-yellow-200 transition-colors duration-200 font-semibold">${isFavorite ? '★' : '☆'} Favorite</button>
                 </div>
                 <p class="text-gray-600">${recipe.instructions}</p>
                 <div class="flex justify-end gap-2 items-center">
@@ -326,18 +154,50 @@ const findRecipes = () => {
     });
 };
 
-window.upvoteRecipe = (recipeName, btn) => {
-    votes[recipeName] = votes[recipeName] || { up: 0, down: 0 };
-    votes[recipeName].up++;
-    saveVotes();
-    findRecipes();
+const voteRecipeOnServer = async (recipeName, type) => {
+  const payload = {
+    recipe_name: recipeName,
+    vote_type:    type
+  };
+  const res = await fetch("http://127.0.0.1:8000/vote", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  });
+  
+  if (!res.ok) {
+    throw new Error(`Server responded ${res.status} on voting`);
+  }
+  return res.json();
 };
 
-window.downvoteRecipe = (recipeName, btn) => {
-    votes[recipeName] = votes[recipeName] || { up: 0, down: 0 };
-    votes[recipeName].down++;
+
+window.upvoteRecipe = async (name) => {
+  try {
+    const { up_votes, down_votes } = await voteRecipeOnServer(name, "up");
+    votes[name] = {
+      up:   up_votes,
+      down: down_votes
+    };
     saveVotes();
     findRecipes();
+  } catch (err) {
+    console.error(err);
+  }
+};
+
+window.downvoteRecipe = async (name) => {
+  try {
+    const { up_votes, down_votes } = await voteRecipeOnServer(name, "down");
+    votes[name] = {
+      up:   up_votes,
+      down: down_votes
+    };
+    saveVotes();
+    findRecipes();
+  } catch (err) {
+    console.error(err);
+  }
 };
 
 window.toggleFavorite = (recipeName, btn) => {
@@ -353,7 +213,6 @@ window.toggleFavorite = (recipeName, btn) => {
 addIngredientBtn.addEventListener('click', addIngredient);
 findRecipesBtn.addEventListener('click', findRecipes);
 
-// Optional: Close modal on outside click
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.classList.add('hidden');
