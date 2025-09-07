@@ -16,7 +16,8 @@ Fridge Raid is designed for people who:
    Utilizes AI to generate creative and highly relevant recipe ideas, moving beyond a simple database lookup
 
   ---
- ** Tech Stack
+ **Tech Stack**
+ 
 **HTML5:** The foundation of the web application.
 
 **TailwindCSS:** A utility-first CSS framework for rapid and responsive styling.
