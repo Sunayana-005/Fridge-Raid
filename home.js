@@ -1,121 +1,231 @@
 // Recipe Database (a small, in-memory collection)
-        const recipes = [
-            {
-                name: "Simple Tomato Pasta",
-                ingredients: ["pasta", "tomatoes", "garlic", "onion", "olive oil"],
-                instructions: "Cook pasta. Sauté chopped garlic and onion in olive oil. Add diced tomatoes and simmer. Mix with pasta."
-            },
-            {
-                name: "Chicken Stir-fry",
-                ingredients: ["chicken", "rice", "broccoli", "soy sauce", "ginger"],
-                instructions: "Cook rice. Stir-fry chicken and broccoli. Add soy sauce and grated ginger. Serve over rice."
-            },
-            {
-                name: "Scrambled Eggs on Toast",
-                ingredients: ["eggs", "bread", "butter", "milk", "salt", "pepper"],
-                instructions: "Whisk eggs with a splash of milk, salt, and pepper. Scramble in a pan with butter. Serve on toasted bread."
-            },
-            {
-                name: "Quick Quesadillas",
-                ingredients: ["tortillas", "cheese", "chicken", "salsa"],
-                instructions: "Place a tortilla in a pan. Layer with cheese, shredded chicken, and salsa. Top with another tortilla and cook until golden on both sides."
-            },
-            {
-                name: "Tuna Salad Sandwich",
-                ingredients: ["tuna", "mayonnaise", "bread", "lettuce", "onion"],
-                instructions: "Mix tuna, mayonnaise, and finely chopped onion. Spread on bread and top with lettuce."
-            }
-        ];
+const recipes = [
+    {
+        name: "Simple Tomato Pasta",
+        ingredients: ["pasta", "tomatoes", "garlic", "onion", "olive oil"],
+        instructions: "Cook pasta. Sauté chopped garlic and onion in olive oil. Add diced tomatoes and simmer. Mix with pasta.",
+        diet: "vegetarian",
+        mealType: "dinner",
+        image: "https://source.unsplash.com/400x300/?pasta"
+    },
+    {
+        name: "Chicken Stir-fry",
+        ingredients: ["chicken", "rice", "broccoli", "soy sauce", "ginger"],
+        instructions: "Cook rice. Stir-fry chicken and broccoli. Add soy sauce and grated ginger. Serve over rice.",
+        diet: "",
+        mealType: "dinner",
+        image: "https://source.unsplash.com/400x300/?chicken"
+    },
+    {
+        name: "Scrambled Eggs on Toast",
+        ingredients: ["eggs", "bread", "butter", "milk", "salt", "pepper"],
+        instructions: "Whisk eggs with a splash of milk, salt, and pepper. Scramble in a pan with butter. Serve on toasted bread.",
+        diet: "vegetarian",
+        mealType: "breakfast",
+        image: "https://source.unsplash.com/400x300/?eggs"
+    },
+    {
+        name: "Quick Quesadillas",
+        ingredients: ["tortillas", "cheese", "chicken", "salsa"],
+        instructions: "Place a tortilla in a pan. Layer with cheese, shredded chicken, and salsa. Top with another tortilla and cook until golden on both sides.",
+        diet: "",
+        mealType: "lunch",
+        image: "https://source.unsplash.com/400x300/?quesadilla"
+    },
+    {
+        name: "Tuna Salad Sandwich",
+        ingredients: ["tuna", "mayonnaise", "bread", "lettuce", "onion"],
+        instructions: "Mix tuna, mayonnaise, and finely chopped onion. Spread on bread and top with lettuce.",
+        diet: "",
+        mealType: "lunch",
+        image: "https://source.unsplash.com/400x300/?sandwich"
+    }
+];
+
 // Global state and element references
-        let userIngredients = [];
-        const ingredientInput = document.getElementById('ingredient-input');
-        const addIngredientBtn = document.getElementById('add-ingredient-btn');
-        const ingredientList = document.getElementById('ingredient-list');
-        const findRecipesBtn = document.getElementById('find-recipes-btn');
-        const recipeResults = document.getElementById('recipe-results');
+let userIngredients = [];
+const ingredientInput = document.getElementById('ingredient-input');
+const addIngredientBtn = document.getElementById('add-ingredient-btn');
+const ingredientList = document.getElementById('ingredient-list');
+const findRecipesBtn = document.getElementById('find-recipes-btn');
+const recipeResults = document.getElementById('recipe-results');
+const dietSelect = document.getElementById('diet-select');
+const mealTypeSelect = document.getElementById('meal-type-select');
 
-        // Function to render the ingredient list
-        const renderIngredients = () => {
-            ingredientList.innerHTML = userIngredients.map(ing => `
-                <li class="bg-indigo-100 text-indigo-800 font-medium px-3 py-1 rounded-full flex items-center gap-1">
-                    <span>${ing}</span>
-                    <button onclick="removeIngredient('${ing}')" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-200">&times;</button>
-                </li>
-            `).join('');
-        };
+// Modal elements
+const modal = document.getElementById('recipe-modal');
+const modalContent = document.getElementById('modal-content');
+const modalClose = document.getElementById('modal-close');
 
-        // Function to add an ingredient
-        const addIngredient = () => {
-            const ingredient = ingredientInput.value.trim().toLowerCase();
-            if (ingredient && !userIngredients.includes(ingredient)) {
-                userIngredients.push(ingredient);
-                ingredientInput.value = '';
-                renderIngredients();
-            }
-        };
+// Favorites and votes from localStorage
+let favorites = JSON.parse(localStorage.getItem('favorites') || '[]');
+let votes = JSON.parse(localStorage.getItem('votes') || '{}');
 
-        // Function to remove an ingredient
-        const removeIngredient = (ingredientToRemove) => {
-            userIngredients = userIngredients.filter(ing => ing !== ingredientToRemove);
-            renderIngredients();
-        };
+// Function to render the ingredient list
+const renderIngredients = () => {
+    ingredientList.innerHTML = userIngredients.map(ing => `
+        <li class="bg-indigo-100 text-indigo-800 font-medium px-3 py-1 rounded-full flex items-center gap-1">
+            <span>${ing}</span>
+            <button onclick="removeIngredient('${ing}')" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-200">&times;</button>
+        </li>
+    `).join('');
+};
 
-        // Function to find and display recipes
-        const findRecipes = () => {
-            recipeResults.innerHTML = '';
-            if (userIngredients.length === 0) {
-                recipeResults.innerHTML = `<p class="text-center text-gray-500 italic">Add some ingredients to get started!</p>`;
-                return;
-            }
+// Function to add an ingredient
+const addIngredient = () => {
+    const ingredient = ingredientInput.value.trim().toLowerCase();
+    if (ingredient && !userIngredients.includes(ingredient)) {
+        userIngredients.push(ingredient);
+        ingredientInput.value = '';
+        renderIngredients();
+    }
+};
 
-            const scoredRecipes = recipes.map(recipe => {
-                const intersection = recipe.ingredients.filter(ing => userIngredients.includes(ing)).length;
-                return { ...recipe, score: intersection };
-            });
+// Function to remove an ingredient
+window.removeIngredient = (ingredientToRemove) => {
+    userIngredients = userIngredients.filter(ing => ing !== ingredientToRemove);
+    renderIngredients();
+};
 
-            const filteredRecipes = scoredRecipes
-                .filter(recipe => recipe.score > 0)
-                .sort((a, b) => b.score - a.score);
+// Function to save favorites
+const saveFavorites = () => {
+    localStorage.setItem('favorites', JSON.stringify(favorites));
+};
 
-            if (filteredRecipes.length === 0) {
-                recipeResults.innerHTML = `
-                    <div class="text-center p-8 bg-orange-50 rounded-xl">
-                        <p class="text-gray-600">No recipes found with your ingredients. Try adding some common items!</p>
-                    </div>
-                `;
-                return;
-            }
-            filteredRecipes.forEach(recipe => {
-                const recipeCard = document.createElement('div');
-                recipeCard.className = 'bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200 space-y-4';
-                recipeCard.innerHTML = `
-                    <h3 class="text-xl font-bold text-gray-900">${recipe.name}</h3>
-                    <div class="flex flex-wrap gap-2">
-                        ${recipe.ingredients.map(ing => {
-                            const isMatch = userIngredients.includes(ing);
-                            return `<span class="px-3 py-1 rounded-full text-xs font-semibold ${isMatch ? 'bg-indigo-200 text-indigo-800' : 'bg-gray-200 text-gray-700'}">
-                                ${ing}
-                            </span>`;
-                        }).join('')}
-                    </div>
-                    <p class="text-gray-600">${recipe.instructions}</p>
-                    <div class="flex justify-end gap-2">
-                        <button onclick="upvoteRecipe(this)" class="px-3 py-1 rounded-full text-sm bg-gray-200 hover:bg-green-200 transition-colors duration-200">👍 Upvote</button>
-                        <button onclick="downvoteRecipe(this)" class="px-3 py-1 rounded-full text-sm bg-gray-200 hover:bg-red-200 transition-colors duration-200">👎 Downvote</button>
-                    </div>
-                `;
-                recipeResults.appendChild(recipeCard);
-            });
-        };
+// Function to save votes
+const saveVotes = () => {
+    localStorage.setItem('votes', JSON.stringify(votes));
+};
 
-        const upvoteRecipe = (btn) => {
-            btn.closest('div').classList.add('opacity-75', 'border-green-500', 'border-2');
-            console.log('Recipe upvoted!');
-        };
+// Function to show modal
+window.showRecipeModal = (recipeIdx) => {
+    const recipe = recipes[recipeIdx];
+    modalContent.innerHTML = `
+        <div class="space-y-4">
+            <img src="${recipe.image}" alt="${recipe.name}" class="w-full h-48 object-cover rounded-xl mb-2">
+            <h2 class="text-2xl font-bold">${recipe.name}</h2>
+            <div class="flex flex-wrap gap-2 mb-2">
+                ${recipe.ingredients.map(ing => `<span class="px-3 py-1 rounded-full text-xs font-semibold bg-gray-200 text-gray-700">${ing}</span>`).join('')}
+            </div>
+            <p class="text-gray-700">${recipe.instructions}</p>
+            <div class="mt-4">
+                <button onclick="addToShoppingList(${recipeIdx})" class="px-4 py-2 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700">Add Ingredients to Shopping List</button>
+            </div>
+        </div>
+    `;
+    modal.classList.remove('hidden');
+};
 
-        const downvoteRecipe = (btn) => {
-            btn.closest('div').classList.add('opacity-75', 'border-red-500', 'border-2');
-            console.log('Recipe downvoted!');
-        };
-        addIngredientBtn.addEventListener('click', addIngredient);
-        findRecipesBtn.addEventListener('click', findRecipes);
+// Function to close modal
+modalClose.onclick = () => {
+    modal.classList.add('hidden');
+};
+
+// Function to add ingredients to shopping list
+window.addToShoppingList = (recipeIdx) => {
+    const recipe = recipes[recipeIdx];
+    const missing = recipe.ingredients.filter(ing => !userIngredients.includes(ing));
+    if (missing.length === 0) {
+        alert("You already have all ingredients!");
+    } else {
+        alert("Added to shopping list:\n" + missing.join(", "));
+    }
+    modal.classList.add('hidden');
+};
+
+// Function to find and display recipes
+const findRecipes = () => {
+    recipeResults.innerHTML = '';
+    if (userIngredients.length === 0) {
+        recipeResults.innerHTML = `<p class="text-center text-gray-500 italic">Add some ingredients to get started!</p>`;
+        return;
+    }
+
+    const selectedDiet = dietSelect.value;
+    const selectedMealType = mealTypeSelect.value;
+
+    const scoredRecipes = recipes.map((recipe, idx) => {
+        const intersection = recipe.ingredients.filter(ing => userIngredients.includes(ing)).length;
+        return { ...recipe, score: intersection, idx };
+    });
+
+    const filteredRecipes = scoredRecipes
+        .filter(recipe => {
+            if (selectedDiet && recipe.diet !== selectedDiet) return false;
+            if (selectedMealType && recipe.mealType !== selectedMealType) return false;
+            return recipe.score > 0;
+        })
+        .sort((a, b) => b.score - a.score);
+
+    if (filteredRecipes.length === 0) {
+        recipeResults.innerHTML = `
+            <div class="text-center p-8 bg-orange-50 rounded-xl">
+                <p class="text-gray-600">No recipes found with your ingredients and options. Try changing your filters or adding some common items!</p>
+            </div>
+        `;
+        return;
+    }
+    filteredRecipes.forEach(recipe => {
+        const upvotes = votes[recipe.name]?.up || 0;
+        const downvotes = votes[recipe.name]?.down || 0;
+        const isFavorite = favorites.includes(recipe.name);
+        const recipeCard = document.createElement('div');
+        recipeCard.className = 'bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200 space-y-4';
+        recipeCard.innerHTML = `
+            <img src="${recipe.image}" alt="${recipe.name}" class="w-full h-40 object-cover rounded-xl mb-2">
+            <h3 class="text-xl font-bold text-gray-900">${recipe.name}</h3>
+            <div class="flex flex-wrap gap-2">
+                ${recipe.ingredients.map(ing => {
+                    const isMatch = userIngredients.includes(ing);
+                    return `<span class="px-3 py-1 rounded-full text-xs font-semibold ${isMatch ? 'bg-indigo-200 text-indigo-800' : 'bg-gray-200 text-gray-700'}">
+                        ${ing}
+                    </span>`;
+                }).join('')}
+            </div>
+            <div class="flex gap-2 mt-2">
+                <button onclick="showRecipeModal(${recipe.idx})" class="px-3 py-1 rounded-full text-sm bg-blue-200 hover:bg-blue-300 transition-colors duration-200">View Details</button>
+                <button onclick="toggleFavorite('${recipe.name}', this)" class="px-3 py-1 rounded-full text-sm ${isFavorite ? 'bg-yellow-300' : 'bg-gray-200'} hover:bg-yellow-200 transition-colors duration-200">${isFavorite ? '★' : '☆'} Favorite</button>
+            </div>
+            <p class="text-gray-600">${recipe.instructions}</p>
+            <div class="flex justify-end gap-2 items-center">
+                <button onclick="upvoteRecipe('${recipe.name}', this)" class="px-3 py-1 rounded-full text-sm bg-gray-200 hover:bg-green-200 transition-colors duration-200">👍 Upvote (${upvotes})</button>
+                <button onclick="downvoteRecipe('${recipe.name}', this)" class="px-3 py-1 rounded-full text-sm bg-gray-200 hover:bg-red-200 transition-colors duration-200">👎 Downvote (${downvotes})</button>
+            </div>
+        `;
+        recipeResults.appendChild(recipeCard);
+    });
+};
+
+window.upvoteRecipe = (recipeName, btn) => {
+    votes[recipeName] = votes[recipeName] || { up: 0, down: 0 };
+    votes[recipeName].up++;
+    saveVotes();
+    findRecipes();
+};
+
+window.downvoteRecipe = (recipeName, btn) => {
+    votes[recipeName] = votes[recipeName] || { up: 0, down: 0 };
+    votes[recipeName].down++;
+    saveVotes();
+    findRecipes();
+};
+
+window.toggleFavorite = (recipeName, btn) => {
+    if (favorites.includes(recipeName)) {
+        favorites = favorites.filter(fav => fav !== recipeName);
+    } else {
+        favorites.push(recipeName);
+    }
+    saveFavorites();
+    findRecipes();
+};
+
+addIngredientBtn.addEventListener('click', addIngredient);
+findRecipesBtn.addEventListener('click', findRecipes);
+
+// Optional: Close modal on outside click
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.classList.add('hidden');
+    }
+};

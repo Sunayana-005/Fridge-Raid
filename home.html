@@ -11,6 +11,10 @@
             font-family: 'Inter', sans-serif;
             background-color: #f3f4f6;
         }
+        /* Modal close button fix for z-index */
+        #modal-close {
+            z-index: 60;
+        }
     </style>
 </head>
 <body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
@@ -22,7 +26,7 @@
             <p class="text-gray-500 text-lg">Enter your ingredients below and we'll find you some recipes!</p>
         </header>
 
-
+        <!-- Ingredients Input -->
         <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
             <h2 class="text-2xl font-semibold text-gray-800 mb-4">Your Ingredients</h2>
             <div class="flex flex-col sm:flex-row gap-4 mb-4">
@@ -31,20 +35,45 @@
                        onkeydown="if(event.key === 'Enter') { document.getElementById('add-ingredient-btn').click(); }">
                 <button id="add-ingredient-btn" class="px-6 py-3 bg-indigo-600 text-white font-semibold rounded-xl shadow-md hover:bg-indigo-700 transition-all duration-200 flex-shrink-0">Add</button>
             </div>
-            <ul id="ingredient-list" class="flex flex-wrap gap-2 text-sm text-gray-700">
-               
-            </ul>
+            <ul id="ingredient-list" class="flex flex-wrap gap-2 text-sm text-gray-700"></ul>
         </div>
 
+        <!-- Extra Options -->
+        <div class="bg-gray-50 p-6 rounded-xl border border-gray-200">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">Extra Options</h2>
+            <div class="flex flex-col sm:flex-row gap-4 mb-4">
+                <select id="diet-select" class="flex-1 p-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <option value="">Dietary Preference</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="gluten-free">Gluten-Free</option>
+                    <option value="dairy-free">Dairy-Free</option>
+                </select>
+                <select id="meal-type-select" class="flex-1 p-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    <option value="">Meal Type</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="snack">Snack</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Find Recipes Button -->
         <div class="text-center">
             <button id="find-recipes-btn" class="w-full px-8 py-4 bg-emerald-600 text-white font-bold text-lg rounded-xl shadow-lg hover:bg-emerald-700 transition-all duration-200 transform hover:scale-105">Find Recipes</button>
         </div>
 
-      
-        <div id="recipe-results" class="space-y-6">
-            
-        </div>
+        <!-- Recipe Results -->
+        <div id="recipe-results" class="space-y-6"></div>
+    </div>
 
+    <!-- Modal for Recipe Details -->
+    <div id="recipe-modal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
+        <div class="bg-white rounded-xl p-8 max-w-lg w-full relative" id="modal-content">
+            <!-- Modal content will be injected here -->
+        </div>
+        <button id="modal-close" class="absolute top-4 right-8 text-2xl text-white font-bold">&times;</button>
     </div>
 
     <script src="home.js"></script>
