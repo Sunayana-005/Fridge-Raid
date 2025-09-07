@@ -1,5 +1,7 @@
-FROM ubuntu:22.04
+FROM ubuntu
 WORKDIR /app
-COPY . .
+COPY requirements.txt .
 RUN pip install -r requirements.txt
-CMD ["uvicorn", "backend:app", "--host", "0.0.0.0", "--port", "8000"]
+COPY . .
+EXPOSE 8000
+CMD ["python", "app.py"]
