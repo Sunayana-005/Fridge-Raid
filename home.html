@@ -33,7 +33,7 @@
 <body class="min-h-screen flex items-center justify-center">
 
     <div class="flex w-full max-w-6xl min-h-[80vh] rounded-3xl shadow-2xl overflow-hidden bg-white/80">
-        <!-- Sidebar -->
+        
         <aside class="sidebar w-full max-w-sm p-8 flex flex-col gap-8 border-r border-indigo-100 shadow-lg">
             <div class="mb-6">
                 <h1 class="text-4xl font-extrabold text-indigo-900 tracking-tight mb-2">Fridge Raid</h1>
@@ -74,7 +74,7 @@
             </div>
         </aside>
 
-        <!-- Main Content -->
+
         <main class="flex-1 flex flex-col items-center px-8 py-10">
             <div class="w-full max-w-3xl">
                 <h2 class="text-2xl font-bold text-indigo-900 mb-6">Recipe Suggestions</h2>
@@ -83,14 +83,11 @@
         </main>
     </div>
 
-    <!-- Modal for Recipe Details -->
     <div id="recipe-modal" class="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50 hidden">
-        <div class="modal-glass rounded-2xl p-8 max-w-lg w-full relative shadow-2xl border border-indigo-100" id="modal-content">
-            <!-- Modal content will be injected here -->
-        </div>
+        <div class="modal-glass rounded-2xl p-8 max-w-lg w-full relative shadow-2xl border border-indigo-100" id="modal-content"></div>
         <button id="modal-close" class="absolute top-4 right-8 text-2xl text-white font-bold">&times;</button>
     </div>
 
-    <script src="home.js"></script>
+    <script src="/static/home.js"></script>
 </body>
 </html>

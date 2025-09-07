@@ -4,6 +4,8 @@ from pydantic import BaseModel
 import uvicorn
 from fuzzywuzzy import fuzz
 import json
+from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 
 def load_recipes_from_json(filepath):
     with open(filepath, "r", encoding="utf-8") as f:
@@ -24,6 +26,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.mount("/static", StaticFiles(directory="."), name="static")
 
 def fuzzy_match(user_ingredients, recipe_ingredients):
     score = 0
@@ -57,6 +61,10 @@ async def recommend(data: RecipeRequest):
             })
     filtered.sort(key=lambda x: -x["score"])
     return filtered
+
+@app.get("/", response_class=FileResponse)
+async def serve_home():
+    return FileResponse("home.html")
 
 if __name__ == "__main__":
     uvicorn.run(app, host="127.0.0.1", port=8000)
