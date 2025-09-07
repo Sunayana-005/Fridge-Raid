@@ -7,7 +7,7 @@ const recipes = [
         instructions: "Whisk eggs with a splash of milk, salt, and pepper. Scramble in a pan with butter. Serve on toasted bread.",
         diet: "vegetarian",
         mealType: "breakfast",
-        image: "https://source.unsplash.com/400x300/?eggs"
+        image: "https://placehold.co/400x300?text=Scrambled+Eggs"
     },
     {
         name: "Banana Pancakes",
@@ -15,7 +15,7 @@ const recipes = [
         instructions: "Mash banana, mix with eggs, flour, milk, and baking powder. Cook pancakes on a skillet. Serve with syrup.",
         diet: "vegetarian",
         mealType: "breakfast",
-        image: "https://source.unsplash.com/400x300/?pancakes"
+        image: "https://placehold.co/400x300?text=Banana+Pancakes"
     },
     {
         name: "Oatmeal Bowl",
@@ -23,7 +23,7 @@ const recipes = [
         instructions: "Cook oats in milk. Top with sliced banana, berries, and drizzle with honey.",
         diet: "vegetarian",
         mealType: "breakfast",
-        image: "https://source.unsplash.com/400x300/?oatmeal"
+        image: "https://placehold.co/400x300?text=Oatmeal+Bowl"
     },
     {
         name: "Avocado Toast",
@@ -31,7 +31,7 @@ const recipes = [
         instructions: "Toast bread. Mash avocado with salt, pepper, and lemon juice. Spread on toast.",
         diet: "vegan",
         mealType: "breakfast",
-        image: "https://source.unsplash.com/400x300/?avocado-toast"
+        image: "https://placehold.co/400x300?text=Avocado+Toast"
     },
     {
         name: "Berry Yogurt Parfait",
@@ -39,7 +39,7 @@ const recipes = [
         instructions: "Layer yogurt, granola, and berries in a glass. Top with honey.",
         diet: "vegetarian",
         mealType: "breakfast",
-        image: "https://source.unsplash.com/400x300/?parfait"
+        image: "https://placehold.co/400x300?text=Yogurt+Parfait"
     },
 
     // Lunch
@@ -49,7 +49,7 @@ const recipes = [
         instructions: "Place a tortilla in a pan. Layer with cheese, shredded chicken, and salsa. Top with another tortilla and cook until golden on both sides.",
         diet: "",
         mealType: "lunch",
-        image: "https://source.unsplash.com/400x300/?quesadilla"
+        image: "https://placehold.co/400x300?text=Quesadillas"
     },
     {
         name: "Tuna Salad Sandwich",
@@ -57,7 +57,7 @@ const recipes = [
         instructions: "Mix tuna, mayonnaise, and finely chopped onion. Spread on bread and top with lettuce.",
         diet: "",
         mealType: "lunch",
-        image: "https://source.unsplash.com/400x300/?sandwich"
+        image: "https://placehold.co/400x300?text=Tuna+Sandwich"
     },
     {
         name: "Grilled Cheese Sandwich",
@@ -65,7 +65,7 @@ const recipes = [
         instructions: "Butter bread slices, add cheese, grill until golden brown.",
         diet: "vegetarian",
         mealType: "lunch",
-        image: "https://source.unsplash.com/400x300/?grilled-cheese"
+        image: "https://placehold.co/400x300?text=Grilled+Cheese"
     },
     {
         name: "Veggie Wrap",
@@ -73,7 +73,7 @@ const recipes = [
         instructions: "Spread hummus on tortilla, add veggies, wrap and slice.",
         diet: "vegan",
         mealType: "lunch",
-        image: "https://source.unsplash.com/400x300/?veggie-wrap"
+        image: "https://placehold.co/400x300?text=Veggie+Wrap"
     },
     {
         name: "Chicken Caesar Salad",
@@ -81,7 +81,7 @@ const recipes = [
         instructions: "Grill chicken, toss with lettuce, croutons, parmesan, and dressing.",
         diet: "",
         mealType: "lunch",
-        image: "https://source.unsplash.com/400x300/?caesar-salad"
+        image: "https://placehold.co/400x300?text=Caesar+Salad"
     },
 
     // Dinner
@@ -91,7 +91,7 @@ const recipes = [
         instructions: "Cook pasta. Sauté chopped garlic and onion in olive oil. Add diced tomatoes and simmer. Mix with pasta.",
         diet: "vegetarian",
         mealType: "dinner",
-        image: "https://source.unsplash.com/400x300/?pasta"
+        image: "https://placehold.co/400x300?text=Tomato+Pasta"
     },
     {
         name: "Chicken Stir-fry",
@@ -99,7 +99,7 @@ const recipes = [
         instructions: "Cook rice. Stir-fry chicken and broccoli. Add soy sauce and grated ginger. Serve over rice.",
         diet: "",
         mealType: "dinner",
-        image: "https://source.unsplash.com/400x300/?chicken"
+        image: "https://placehold.co/400x300?text=Chicken+Stir-fry"
     },
     {
         name: "Vegetable Curry",
@@ -107,7 +107,7 @@ const recipes = [
         instructions: "Sauté onion, add veggies and curry powder. Pour coconut milk and simmer until veggies are tender.",
         diet: "vegan",
         mealType: "dinner",
-        image: "https://source.unsplash.com/400x300/?curry"
+        image: "https://placehold.co/400x300?text=Vegetable+Curry"
     },
     {
         name: "Paneer Tikka Masala",
@@ -115,7 +115,7 @@ const recipes = [
         instructions: "Cook paneer cubes, simmer with tomato-onion gravy and spices. Add cream at the end.",
         diet: "vegetarian",
         mealType: "dinner",
-        image: "https://source.unsplash.com/400x300/?paneer"
+        image: "https://placehold.co/400x300?text=Paneer+Tikka"
     },
     {
         name: "Grilled Salmon & Veggies",
@@ -123,7 +123,7 @@ const recipes = [
         instructions: "Grill salmon with lemon and olive oil. Serve with steamed broccoli and carrots.",
         diet: "",
         mealType: "dinner",
-        image: "https://source.unsplash.com/400x300/?salmon"
+        image: "https://placehold.co/400x300?text=Grilled+Salmon"
     },
 
     // Snacks
@@ -133,7 +133,7 @@ const recipes = [
         instructions: "Chop all fruits. Mix in a bowl and drizzle with honey.",
         diet: "vegan",
         mealType: "snack",
-        image: "https://source.unsplash.com/400x300/?fruit-salad"
+        image: "https://placehold.co/400x300?text=Fruit+Salad"
     },
     {
         name: "Veggie Sticks & Hummus",
@@ -141,7 +141,7 @@ const recipes = [
         instructions: "Slice veggies into sticks. Serve with hummus for dipping.",
         diet: "vegan",
         mealType: "snack",
-        image: "https://source.unsplash.com/400x300/?hummus"
+        image: "https://placehold.co/400x300?text=Veggie+Sticks"
     },
     {
         name: "Peanut Butter Energy Balls",
@@ -149,7 +149,7 @@ const recipes = [
         instructions: "Mix all ingredients, roll into balls, chill before serving.",
         diet: "vegetarian",
         mealType: "snack",
-        image: "https://source.unsplash.com/400x300/?energy-balls"
+        image: "https://placehold.co/400x300?text=Energy+Balls"
     },
     {
         name: "Yogurt Parfait",
@@ -157,7 +157,7 @@ const recipes = [
         instructions: "Layer yogurt, granola, and berries in a glass. Top with honey.",
         diet: "vegetarian",
         mealType: "snack",
-        image: "https://source.unsplash.com/400x300/?parfait"
+        image: "https://placehold.co/400x300?text=Yogurt+Parfait"
     },
     {
         name: "Roasted Chickpeas",
@@ -165,7 +165,7 @@ const recipes = [
         instructions: "Toss chickpeas with oil and spices. Roast until crispy.",
         diet: "vegan",
         mealType: "snack",
-        image: "https://source.unsplash.com/400x300/?chickpeas"
+        image: "https://placehold.co/400x300?text=Roasted+Chickpeas"
     }
 ];
 
@@ -226,7 +226,7 @@ const saveVotes = () => {
 
 // Function to show modal
 window.showRecipeModal = (recipeIdx) => {
-    const recipe = recipes[recipeIdx];
+    const recipe = window.lastRecipes[recipeIdx];
     modalContent.innerHTML = `
         <div class="space-y-4">
             <img src="${recipe.image}" alt="${recipe.name}" class="w-full h-48 object-cover rounded-xl mb-2">
@@ -250,7 +250,7 @@ modalClose.onclick = () => {
 
 // Function to add ingredients to shopping list
 window.addToShoppingList = (recipeIdx) => {
-    const recipe = recipes[recipeIdx];
+    const recipe = window.lastRecipes[recipeIdx];
     const missing = recipe.ingredients.filter(ing => !userIngredients.includes(ing));
     if (missing.length === 0) {
         alert("You already have all ingredients!");
@@ -260,7 +260,7 @@ window.addToShoppingList = (recipeIdx) => {
     modal.classList.add('hidden');
 };
 
-// Function to find and display recipes
+// Function to find and display recipes (fetches from backend)
 const findRecipes = () => {
     recipeResults.innerHTML = '';
     if (userIngredients.length === 0) {
@@ -271,55 +271,58 @@ const findRecipes = () => {
     const selectedDiet = dietSelect.value;
     const selectedMealType = mealTypeSelect.value;
 
-    const scoredRecipes = recipes.map((recipe, idx) => {
-        const intersection = recipe.ingredients.filter(ing => userIngredients.includes(ing)).length;
-        return { ...recipe, score: intersection, idx };
-    });
-
-    const filteredRecipes = scoredRecipes
-        .filter(recipe => {
-            if (selectedDiet && recipe.diet !== selectedDiet) return false;
-            if (selectedMealType && recipe.mealType !== selectedMealType) return false;
-            return recipe.score > 0;
+    fetch("http://127.0.0.1:8000/recommend", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            ingredients: userIngredients,
+            diet: selectedDiet,
+            mealType: selectedMealType
         })
-        .sort((a, b) => b.score - a.score);
-
-    if (filteredRecipes.length === 0) {
-        recipeResults.innerHTML = `
-            <div class="text-center p-8 bg-orange-50 rounded-xl">
-                <p class="text-gray-600">No recipes found with your ingredients and options. Try changing your filters or adding some common items!</p>
-            </div>
-        `;
-        return;
-    }
-    filteredRecipes.forEach(recipe => {
-        const upvotes = votes[recipe.name]?.up || 0;
-        const downvotes = votes[recipe.name]?.down || 0;
-        const isFavorite = favorites.includes(recipe.name);
-        const recipeCard = document.createElement('div');
-        recipeCard.className = 'bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200 space-y-4';
-        recipeCard.innerHTML = `
-            <img src="${recipe.image}" alt="${recipe.name}" class="w-full h-40 object-cover rounded-xl mb-2">
-            <h3 class="text-xl font-bold text-gray-900">${recipe.name}</h3>
-            <div class="flex flex-wrap gap-2">
-                ${recipe.ingredients.map(ing => {
-                    const isMatch = userIngredients.includes(ing);
-                    return `<span class="px-3 py-1 rounded-full text-xs font-semibold ${isMatch ? 'bg-indigo-200 text-indigo-800' : 'bg-gray-200 text-gray-700'}">
-                        ${ing}
-                    </span>`;
-                }).join('')}
-            </div>
-            <div class="flex gap-2 mt-2">
-                <button onclick="showRecipeModal(${recipe.idx})" class="px-3 py-1 rounded-full text-sm bg-blue-200 hover:bg-blue-300 transition-colors duration-200">View Details</button>
-                <button onclick="toggleFavorite('${recipe.name}', this)" class="px-3 py-1 rounded-full text-sm ${isFavorite ? 'bg-yellow-300' : 'bg-gray-200'} hover:bg-yellow-200 transition-colors duration-200">${isFavorite ? '★' : '☆'} Favorite</button>
-            </div>
-            <p class="text-gray-600">${recipe.instructions}</p>
-            <div class="flex justify-end gap-2 items-center">
-                <button onclick="upvoteRecipe('${recipe.name}', this)" class="px-3 py-1 rounded-full text-sm bg-gray-200 hover:bg-green-200 transition-colors duration-200">👍 Upvote (${upvotes})</button>
-                <button onclick="downvoteRecipe('${recipe.name}', this)" class="px-3 py-1 rounded-full text-sm bg-gray-200 hover:bg-red-200 transition-colors duration-200">👎 Downvote (${downvotes})</button>
-            </div>
-        `;
-        recipeResults.appendChild(recipeCard);
+    })
+    .then(res => res.json())
+    .then(recipes => {
+        window.lastRecipes = recipes.map((r, idx) => ({...r, idx}));
+        if (recipes.length === 0) {
+            recipeResults.innerHTML = `
+                <div class="text-center p-8 bg-orange-50 rounded-xl">
+                    <p class="text-gray-600">No recipes found with your ingredients and options. Try changing your filters or adding some common items!</p>
+                </div>
+            `;
+            return;
+        }
+        recipes.forEach((recipe, idx) => {
+            const upvotes = votes[recipe.name]?.up || 0;
+            const downvotes = votes[recipe.name]?.down || 0;
+            const isFavorite = favorites.includes(recipe.name);
+            const recipeCard = document.createElement('div');
+            recipeCard.className = 'bg-gray-50 p-6 rounded-xl shadow-sm border border-gray-200 space-y-4';
+            recipeCard.innerHTML = `
+                <img src="${recipe.image}" alt="${recipe.name}" class="w-full h-40 object-cover rounded-xl mb-2">
+                <h3 class="text-xl font-bold text-gray-900">${recipe.name}</h3>
+                <div class="flex flex-wrap gap-2">
+                    ${recipe.ingredients.map(ing => {
+                        const isMatch = userIngredients.includes(ing);
+                        return `<span class="px-3 py-1 rounded-full text-xs font-semibold ${isMatch ? 'bg-indigo-200 text-indigo-800' : 'bg-gray-200 text-gray-700'}">
+                            ${ing}
+                        </span>`;
+                    }).join('')}
+                </div>
+                <div class="flex gap-2 mt-2">
+                    <button onclick="showRecipeModal(${idx})" class="px-3 py-1 rounded-full text-sm bg-blue-200 hover:bg-blue-300 transition-colors duration-200">View Details</button>
+                    <button onclick="toggleFavorite('${recipe.name}', this)" class="px-3 py-1 rounded-full text-sm ${isFavorite ? 'bg-yellow-300' : 'bg-gray-200'} hover:bg-yellow-200 transition-colors duration-200">${isFavorite ? '★' : '☆'} Favorite</button>
+                </div>
+                <p class="text-gray-600">${recipe.instructions}</p>
+                <div class="flex justify-end gap-2 items-center">
+                    <button onclick="upvoteRecipe('${recipe.name}', this)" class="px-3 py-1 rounded-full text-sm bg-gray-200 hover:bg-green-200 transition-colors duration-200">👍 Upvote (${upvotes})</button>
+                    <button onclick="downvoteRecipe('${recipe.name}', this)" class="px-3 py-1 rounded-full text-sm bg-gray-200 hover:bg-red-200 transition-colors duration-200">👎 Downvote (${downvotes})</button>
+                </div>
+            `;
+            recipeResults.appendChild(recipeCard);
+        });
+    })
+    .catch(() => {
+        recipeResults.innerHTML = `<div class="text-center p-8 bg-red-50 rounded-xl"><p class="text-red-600">Could not connect to backend. Make sure Python server is running.</p></div>`;
     });
 };
 

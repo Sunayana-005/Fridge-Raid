@@ -1,0 +1,778 @@
+[
+    {
+        "name": "Banana Pancakes",
+        "ingredients": ["banana", "flour", "milk", "baking powder", "sugar", "ghee"],
+        "instructions": "Mash banana, mix with flour, milk, baking powder, sugar, and ghee. Cook pancakes on a skillet.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Banana+Pancakes"
+    },
+    {
+        "name": "Oatmeal Bowl",
+        "ingredients": ["oats", "milk", "banana", "honey", "berries"],
+        "instructions": "Cook oats in milk. Top with sliced banana, berries, and drizzle with honey.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Oatmeal+Bowl"
+    },
+    {
+        "name": "Avocado Toast",
+        "ingredients": ["bread", "avocado", "salt", "pepper", "lemon"],
+        "instructions": "Toast bread. Mash avocado with salt, pepper, and lemon juice. Spread on toast.",
+        "diet": "vegan",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Avocado+Toast"
+    },
+    {
+        "name": "Berry Yogurt Parfait",
+        "ingredients": ["yogurt", "granola", "berries", "honey"],
+        "instructions": "Layer yogurt, granola, and berries in a glass. Top with honey.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Yogurt+Parfait"
+    },
+    {
+        "name": "Sweet Potato Hash",
+        "ingredients": ["sweet potato", "bell pepper", "spinach", "salt", "pepper", "olive oil"],
+        "instructions": "Dice sweet potato and bell pepper. Sauté in olive oil, add spinach, salt, and pepper.",
+        "diet": "vegan",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Sweet+Potato+Hash"
+    },
+    {
+        "name": "Grilled Veggie Sandwich",
+        "ingredients": ["bread", "tomato", "cucumber", "lettuce", "cheese", "butter"],
+        "instructions": "Layer tomato, cucumber, lettuce, and cheese between bread slices. Grill with butter.",
+        "diet": "vegetarian",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Veg+Sandwich"
+    },
+    {
+        "name": "Paneer Salad Bowl",
+        "ingredients": ["paneer", "lettuce", "tomato", "cucumber", "carrot", "lemon", "salt", "pepper"],
+        "instructions": "Cube paneer and toss with veggies, lemon juice, salt, and pepper.",
+        "diet": "vegetarian",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Paneer+Salad"
+    },
+    {
+        "name": "Vegetable Wrap",
+        "ingredients": ["tortilla", "lettuce", "tomato", "cucumber", "hummus", "carrot"],
+        "instructions": "Spread hummus on tortilla, add veggies, wrap and slice.",
+        "diet": "vegan",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Veggie+Wrap"
+    },
+    {
+        "name": "Stuffed Bell Peppers",
+        "ingredients": ["bell pepper", "rice", "peas", "carrot", "corn", "cheese", "salt", "pepper"],
+        "instructions": "Stuff bell peppers with cooked rice and veggies. Top with cheese and bake.",
+        "diet": "vegetarian",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Stuffed+Peppers"
+    },
+    {
+        "name": "Quinoa Salad",
+        "ingredients": ["quinoa", "cucumber", "tomato", "lemon", "olive oil", "salt", "pepper"],
+        "instructions": "Cook quinoa, mix with chopped veggies, lemon juice, olive oil, salt, and pepper.",
+        "diet": "vegan",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Quinoa+Salad"
+    },
+    {
+        "name": "Vegetable Curry (No Onion/Garlic)",
+        "ingredients": ["potato", "carrot", "peas", "tomato", "coconut milk", "curry powder", "salt", "pepper"],
+        "instructions": "Sauté veggies, add tomato, coconut milk, curry powder, salt, and pepper. Simmer until tender.",
+        "diet": "vegan",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Veg+Curry"
+    },
+    {
+        "name": "Paneer Tikka (No Onion/Garlic)",
+        "ingredients": ["paneer", "yogurt", "bell pepper", "tomato", "spices", "lemon"],
+        "instructions": "Marinate paneer and veggies in yogurt, spices, and lemon. Grill or bake.",
+        "diet": "vegetarian",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Paneer+Tikka"
+    },
+    {
+        "name": "Mixed Veg Stir-fry",
+        "ingredients": ["broccoli", "carrot", "bell pepper", "peas", "soy sauce", "olive oil", "salt", "pepper"],
+        "instructions": "Stir-fry all veggies in olive oil, add soy sauce, salt, and pepper.",
+        "diet": "vegan",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Veg+Stir-fry"
+    },
+    {
+        "name": "Spinach & Corn Rice",
+        "ingredients": ["rice", "spinach", "corn", "salt", "pepper", "ghee"],
+        "instructions": "Cook rice, sauté spinach and corn in ghee, mix together with salt and pepper.",
+        "diet": "vegetarian",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Spinach+Corn+Rice"
+    },
+    {
+        "name": "Stuffed Zucchini Boats",
+        "ingredients": ["zucchini", "rice", "tomato", "cheese", "salt", "pepper", "olive oil"],
+        "instructions": "Stuff halved zucchinis with rice, tomato, cheese, salt, and pepper. Bake with olive oil.",
+        "diet": "vegetarian",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Zucchini+Boats"
+    },
+    {
+        "name": "Fruit Salad",
+        "ingredients": ["apple", "banana", "orange", "grapes", "honey"],
+        "instructions": "Chop all fruits. Mix in a bowl and drizzle with honey.",
+        "diet": "vegetarian",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Fruit+Salad"
+    },
+    {
+        "name": "Veggie Sticks & Hummus",
+        "ingredients": ["carrot", "cucumber", "bell pepper", "hummus"],
+        "instructions": "Slice veggies into sticks. Serve with hummus for dipping.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Veggie+Sticks"
+    },
+    {
+        "name": "Peanut Butter Energy Balls",
+        "ingredients": ["peanut butter", "oats", "honey", "chia seeds"],
+        "instructions": "Mix all ingredients, roll into balls, chill before serving.",
+        "diet": "vegetarian",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Energy+Balls"
+    },
+    {
+        "name": "Yogurt Parfait",
+        "ingredients": ["yogurt", "granola", "berries", "honey"],
+        "instructions": "Layer yogurt, granola, and berries in a glass. Top with honey.",
+        "diet": "vegetarian",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Yogurt+Parfait"
+    },
+    {
+        "name": "Roasted Chickpeas",
+        "ingredients": ["chickpeas", "olive oil", "paprika", "salt"],
+        "instructions": "Toss chickpeas with oil and spices. Roast until crispy.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Roasted+Chickpeas"
+    },
+    {
+        "name": "Cucumber Mint Salad",
+        "ingredients": ["cucumber", "mint", "lemon", "salt", "pepper"],
+        "instructions": "Slice cucumber, mix with chopped mint, lemon juice, salt, and pepper.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Cucumber+Mint+Salad"
+    },
+    {
+        "name": "Carrot Halwa",
+        "ingredients": ["carrot", "milk", "sugar", "ghee", "cardamom", "cashew"],
+        "instructions": "Grate carrot, cook in milk, add sugar, ghee, cardamom, and cashew.",
+        "diet": "vegetarian",
+        "mealType": "dessert",
+        "image": "https://placehold.co/400x300?text=Carrot+Halwa"
+    },
+    {
+        "name": "Sabudana Khichdi",
+        "ingredients": ["sabudana", "potato", "peanut", "cumin", "salt", "ghee"],
+        "instructions": "Soak sabudana, cook with potato, peanut, cumin, salt, and ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Sabudana+Khichdi"
+    },
+    {
+        "name": "Moong Dal Chilla",
+        "ingredients": ["moong dal", "cumin", "turmeric", "salt", "ghee"],
+        "instructions": "Soak moong dal, blend, mix with spices, cook on skillet with ghee.",
+        "diet": "vegan",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Moong+Dal+Chilla"
+    },
+    {
+        "name": "Spinach Paratha",
+        "ingredients": ["wheat flour", "spinach", "salt", "ghee"],
+        "instructions": "Mix flour and spinach, roll parathas, cook with ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Spinach+Paratha"
+    },
+    {
+        "name": "Corn Salad",
+        "ingredients": ["corn", "tomato", "cucumber", "lemon", "salt", "pepper"],
+        "instructions": "Mix boiled corn with chopped veggies, lemon juice, salt, and pepper.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Corn+Salad"
+    },
+    {
+        "name": "Apple Cinnamon Oats",
+        "ingredients": ["oats", "apple", "cinnamon", "milk", "honey"],
+        "instructions": "Cook oats in milk, add chopped apple, cinnamon, and honey.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Apple+Oats"
+    },
+    {
+        "name": "Tomato Rice",
+        "ingredients": ["rice", "tomato", "cumin", "turmeric", "salt", "ghee"],
+        "instructions": "Cook rice with tomato and spices, finish with ghee.",
+        "diet": "vegan",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Tomato+Rice"
+    },
+    {
+        "name": "Beetroot Salad",
+        "ingredients": ["beetroot", "carrot", "lemon", "salt", "pepper"],
+        "instructions": "Grate beetroot and carrot, mix with lemon juice, salt, and pepper.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Beetroot+Salad"
+    },
+    {
+        "name": "Pumpkin Soup",
+        "ingredients": ["pumpkin", "carrot", "salt", "pepper", "coconut milk"],
+        "instructions": "Boil pumpkin and carrot, blend, add coconut milk, salt, and pepper.",
+        "diet": "vegan",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Pumpkin+Soup"
+    },
+    {
+        "name": "Rice Pulao",
+        "ingredients": ["rice", "peas", "carrot", "beans", "cumin", "salt", "ghee"],
+        "instructions": "Cook rice with veggies and spices, finish with ghee.",
+        "diet": "vegetarian",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Rice+Pulao"
+    },
+    {
+        "name": "Mango Lassi",
+        "ingredients": ["mango", "yogurt", "milk", "sugar", "cardamom"],
+        "instructions": "Blend mango, yogurt, milk, sugar, and cardamom.",
+        "diet": "vegetarian",
+        "mealType": "drink",
+        "image": "https://placehold.co/400x300?text=Mango+Lassi"
+    },
+    {
+        "name": "Coconut Chutney",
+        "ingredients": ["coconut", "green chili", "salt", "cumin", "lemon"],
+        "instructions": "Blend coconut with spices and lemon juice.",
+        "diet": "vegan",
+        "mealType": "side",
+        "image": "https://placehold.co/400x300?text=Coconut+Chutney"
+    },
+    {
+        "name": "Potato Wedges",
+        "ingredients": ["potato", "olive oil", "salt", "pepper", "paprika"],
+        "instructions": "Cut potatoes, toss with oil and spices, bake until crispy.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Potato+Wedges"
+    },
+    {
+        "name": "Sago Pudding",
+        "ingredients": ["sago", "milk", "sugar", "cardamom", "cashew"],
+        "instructions": "Cook sago in milk, add sugar, cardamom, and cashew.",
+        "diet": "vegetarian",
+        "mealType": "dessert",
+        "image": "https://placehold.co/400x300?text=Sago+Pudding"
+    },
+    {
+        "name": "Vegetable Stew",
+        "ingredients": ["potato", "carrot", "peas", "beans", "coconut milk", "salt", "pepper"],
+        "instructions": "Cook veggies in coconut milk, add salt and pepper.",
+        "diet": "vegan",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Veg+Stew"
+    },
+    {
+        "name": "Papaya Salad",
+        "ingredients": ["papaya", "lemon", "mint", "salt", "pepper"],
+        "instructions": "Slice papaya, mix with lemon juice, mint, salt, and pepper.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Papaya+Salad"
+    },
+    {
+        "name": "Millet Upma",
+        "ingredients": ["millet", "carrot", "peas", "cumin", "salt", "ghee"],
+        "instructions": "Cook millet with veggies and spices, finish with ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Millet+Upma"
+    },
+    {
+        "name": "Pineapple Raita",
+        "ingredients": ["pineapple", "yogurt", "cumin", "salt", "mint"],
+        "instructions": "Mix chopped pineapple with yogurt, cumin, salt, and mint.",
+        "diet": "vegetarian",
+        "mealType": "side",
+        "image": "https://placehold.co/400x300?text=Pineapple+Raita"
+    },
+    {
+        "name": "Lemon Rice",
+        "ingredients": ["rice", "lemon", "cumin", "turmeric", "salt", "ghee"],
+        "instructions": "Cook rice, mix with lemon juice and spices, finish with ghee.",
+        "diet": "vegan",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Lemon+Rice"
+    },
+    {
+        "name": "Pumpkin Paratha",
+        "ingredients": ["wheat flour", "pumpkin", "salt", "ghee"],
+        "instructions": "Mix flour and pumpkin, roll parathas, cook with ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Pumpkin+Paratha"
+    },
+    {
+        "name": "Cabbage Stir-fry",
+        "ingredients": ["cabbage", "carrot", "peas", "cumin", "salt", "olive oil"],
+        "instructions": "Stir-fry cabbage and veggies with spices and olive oil.",
+        "diet": "vegan",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Cabbage+Stir-fry"
+    },
+    {
+        "name": "Date & Nut Balls",
+        "ingredients": ["dates", "cashew", "almond", "coconut"],
+        "instructions": "Blend dates and nuts, roll into balls, coat with coconut.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Date+Nut+Balls"
+    },
+    {
+        "name": "Bottle Gourd Curry",
+        "ingredients": ["bottle gourd", "tomato", "cumin", "turmeric", "salt", "ghee"],
+        "instructions": "Cook bottle gourd with tomato and spices, finish with ghee.",
+        "diet": "vegan",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Bottle+Gourd+Curry"
+    },
+    {
+        "name": "Methi Thepla",
+        "ingredients": ["wheat flour", "fenugreek leaves", "cumin", "turmeric", "salt", "ghee"],
+        "instructions": "Mix flour and fenugreek, roll theplas, cook with ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Methi+Thepla"
+    },
+    {
+        "name": "Coconut Rice",
+        "ingredients": ["rice", "coconut", "cumin", "salt", "ghee"],
+        "instructions": "Cook rice, mix with grated coconut and spices, finish with ghee.",
+        "diet": "vegan",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Coconut+Rice"
+    },
+    {
+        "name": "Potato Curry",
+        "ingredients": ["potato", "tomato", "cumin", "turmeric", "salt", "ghee"],
+        "instructions": "Cook potato with tomato and spices, finish with ghee.",
+        "diet": "vegan",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Potato+Curry"
+    },
+    {
+        "name": "Rava Kesari",
+        "ingredients": ["semolina", "milk", "sugar", "ghee", "cardamom", "cashew"],
+        "instructions": "Cook semolina in milk, add sugar, ghee, cardamom, and cashew.",
+        "diet": "vegetarian",
+        "mealType": "dessert",
+        "image": "https://placehold.co/400x300?text=Rava+Kesari"
+    },
+    {
+        "name": "Vegetable Dalia",
+        "ingredients": ["dalia", "carrot", "peas", "beans", "cumin", "salt", "ghee"],
+        "instructions": "Cook dalia with veggies and spices, finish with ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Vegetable+Dalia"
+    },
+    {
+        "name": "Papaya Smoothie",
+        "ingredients": ["papaya", "milk", "honey", "cardamom"],
+        "instructions": "Blend papaya, milk, honey, and cardamom.",
+        "diet": "vegetarian",
+        "mealType": "drink",
+        "image": "https://placehold.co/400x300?text=Papaya+Smoothie"
+    },
+    {
+        "name": "Cucumber Raita",
+        "ingredients": ["cucumber", "yogurt", "cumin", "salt", "mint"],
+        "instructions": "Mix chopped cucumber with yogurt, cumin, salt, and mint.",
+        "diet": "vegetarian",
+        "mealType": "side",
+        "image": "https://placehold.co/400x300?text=Cucumber+Raita"
+    },
+    {
+        "name": "Pumpkin Halwa",
+        "ingredients": ["pumpkin", "milk", "sugar", "ghee", "cardamom", "cashew"],
+        "instructions": "Cook pumpkin in milk, add sugar, ghee, cardamom, and cashew.",
+        "diet": "vegetarian",
+        "mealType": "dessert",
+        "image": "https://placehold.co/400x300?text=Pumpkin+Halwa"
+    },
+    {
+        "name": "Vegetable Idli",
+        "ingredients": ["rice", "urad dal", "carrot", "peas", "salt"],
+        "instructions": "Make idli batter, add veggies, steam until cooked.",
+        "diet": "vegan",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Vegetable+Idli"
+    },
+    {
+        "name": "Spinach Soup",
+        "ingredients": ["spinach", "potato", "salt", "pepper", "milk"],
+        "instructions": "Boil spinach and potato, blend, add milk, salt, and pepper.",
+        "diet": "vegetarian",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Spinach+Soup"
+    },
+    {
+        "name": "Carrot Rice",
+        "ingredients": ["rice", "carrot", "cumin", "salt", "ghee"],
+        "instructions": "Cook rice with grated carrot and spices, finish with ghee.",
+        "diet": "vegetarian",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Carrot+Rice"
+    },
+    {
+        "name": "Apple Chutney",
+        "ingredients": ["apple", "lemon", "mint", "salt", "cumin"],
+        "instructions": "Blend apple with lemon juice, mint, salt, and cumin.",
+        "diet": "vegan",
+        "mealType": "side",
+        "image": "https://placehold.co/400x300?text=Apple+Chutney"
+    },
+    {
+        "name": "Vegetable Uttapam",
+        "ingredients": ["rice", "urad dal", "carrot", "peas", "tomato", "salt"],
+        "instructions": "Make uttapam batter, add veggies, cook on skillet.",
+        "diet": "vegan",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Vegetable+Uttapam"
+    },
+    {
+        "name": "Mango Rice",
+        "ingredients": ["rice", "mango", "cumin", "salt", "ghee"],
+        "instructions": "Cook rice, mix with mango and spices, finish with ghee.",
+        "diet": "vegetarian",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Mango+Rice"
+    },
+    {
+        "name": "Beetroot Paratha",
+        "ingredients": ["wheat flour", "beetroot", "salt", "ghee"],
+        "instructions": "Mix flour and beetroot, roll parathas, cook with ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Beetroot+Paratha"
+    },
+    {
+        "name": "Vegetable Poha",
+        "ingredients": ["poha", "carrot", "peas", "cumin", "turmeric", "salt", "ghee"],
+        "instructions": "Cook poha with veggies and spices, finish with ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Vegetable+Poha"
+    },
+    {
+        "name": "Coconut Barfi",
+        "ingredients": ["coconut", "milk", "sugar", "cardamom", "ghee"],
+        "instructions": "Cook coconut in milk, add sugar, cardamom, and ghee.",
+        "diet": "vegetarian",
+        "mealType": "dessert",
+        "image": "https://placehold.co/400x300?text=Coconut+Barfi"
+    },
+    {
+        "name": "Vegetable Pulao",
+        "ingredients": ["rice", "carrot", "peas", "beans", "cumin", "salt", "ghee"],
+        "instructions": "Cook rice with veggies and spices, finish with ghee.",
+        "diet": "vegetarian",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Vegetable+Pulao"
+    },
+    {
+        "name": "Papaya Parfait",
+        "ingredients": ["papaya", "yogurt", "granola", "honey"],
+        "instructions": "Layer papaya, yogurt, granola, and honey in a glass.",
+        "diet": "vegetarian",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Papaya+Parfait"
+    },
+    {
+        "name": "Pumpkin Rice",
+        "ingredients": ["rice", "pumpkin", "cumin", "salt", "ghee"],
+        "instructions": "Cook rice with pumpkin and spices, finish with ghee.",
+        "diet": "vegetarian",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Pumpkin+Rice"
+    },
+    {
+        "name": "Vegetable Dhokla",
+        "ingredients": ["besan", "carrot", "peas", "cumin", "salt", "lemon"],
+        "instructions": "Make dhokla batter, add veggies, steam until cooked.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Vegetable+Dhokla"
+    },
+    {
+        "name": "Spinach Idli",
+        "ingredients": ["rice", "urad dal", "spinach", "salt"],
+        "instructions": "Make idli batter, add spinach, steam until cooked.",
+        "diet": "vegan",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Spinach+Idli"
+    },
+    {
+        "name": "Carrot Soup",
+        "ingredients": ["carrot", "potato", "salt", "pepper", "milk"],
+        "instructions": "Boil carrot and potato, blend, add milk, salt, and pepper.",
+        "diet": "vegetarian",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Carrot+Soup"
+    },
+    {
+        "name": "Vegetable Pancakes",
+        "ingredients": ["wheat flour", "carrot", "peas", "cumin", "salt", "ghee"],
+        "instructions": "Mix flour and veggies, cook pancakes with ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Vegetable+Pancakes"
+    },
+    {
+        "name": "Mango Parfait",
+        "ingredients": ["mango", "yogurt", "granola", "honey"],
+        "instructions": "Layer mango, yogurt, granola, and honey in a glass.",
+        "diet": "vegetarian",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Mango+Parfait"
+    },
+    {
+        "name": "Vegetable Cutlet",
+        "ingredients": ["potato", "carrot", "peas", "bread crumbs", "salt", "pepper", "ghee"],
+        "instructions": "Mix veggies, shape cutlets, coat with bread crumbs, cook with ghee.",
+        "diet": "vegetarian",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Vegetable+Cutlet"
+    },
+    {
+        "name": "Pumpkin Pancakes",
+        "ingredients": ["pumpkin", "wheat flour", "milk", "sugar", "ghee"],
+        "instructions": "Mix pumpkin and flour, cook pancakes with milk, sugar, and ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Pumpkin+Pancakes"
+    },
+    {
+        "name": "Vegetable Sandwich",
+        "ingredients": ["bread", "carrot", "cucumber", "tomato", "lettuce", "cheese"],
+        "instructions": "Layer veggies and cheese between bread slices.",
+        "diet": "vegetarian",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Vegetable+Sandwich"
+    },
+    {
+        "name": "Spinach Pancakes",
+        "ingredients": ["spinach", "wheat flour", "milk", "salt", "ghee"],
+        "instructions": "Mix spinach and flour, cook pancakes with milk, salt, and ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Spinach+Pancakes"
+    },
+    {
+        "name": "Vegetable Samosa",
+        "ingredients": ["wheat flour", "potato", "peas", "carrot", "cumin", "salt", "ghee"],
+        "instructions": "Make samosa dough, fill with veggies, bake or fry.",
+        "diet": "vegetarian",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Vegetable+Samosa"
+    },
+    {
+        "name": "Pumpkin Soup",
+        "ingredients": ["pumpkin", "carrot", "salt", "pepper", "coconut milk"],
+        "instructions": "Boil pumpkin and carrot, blend, add coconut milk, salt, and pepper.",
+        "diet": "vegan",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Pumpkin+Soup"
+    },
+    {
+        "name": "Vegetable Kebabs",
+        "ingredients": ["potato", "carrot", "peas", "bread crumbs", "cumin", "salt", "ghee"],
+        "instructions": "Mix veggies, shape kebabs, coat with bread crumbs, cook with ghee.",
+        "diet": "vegetarian",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Vegetable+Kebabs"
+    },
+    {
+        "name": "Spinach Rice",
+        "ingredients": ["rice", "spinach", "cumin", "salt", "ghee"],
+        "instructions": "Cook rice with spinach and spices, finish with ghee.",
+        "diet": "vegetarian",
+        "mealType": "lunch",
+        "image": "https://placehold.co/400x300?text=Spinach+Rice"
+    },
+    {
+        "name": "Vegetable Bhaji",
+        "ingredients": ["potato", "carrot", "peas", "beans", "cumin", "turmeric", "salt", "ghee"],
+        "instructions": "Cook veggies with spices, finish with ghee.",
+        "diet": "vegetarian",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Vegetable+Bhaji"
+    },
+    {
+        "name": "Pumpkin Idli",
+        "ingredients": ["rice", "urad dal", "pumpkin", "salt"],
+        "instructions": "Make idli batter, add pumpkin, steam until cooked.",
+        "diet": "vegan",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Pumpkin+Idli"
+    },
+    {
+        "name": "Vegetable Korma",
+        "ingredients": ["potato", "carrot", "peas", "beans", "coconut milk", "cumin", "salt"],
+        "instructions": "Cook veggies in coconut milk and spices.",
+        "diet": "vegan",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Vegetable+Korma"
+    },
+    {
+        "name": "Spinach Dhokla",
+        "ingredients": ["besan", "spinach", "cumin", "salt", "lemon"],
+        "instructions": "Make dhokla batter, add spinach, steam until cooked.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Spinach+Dhokla"
+    },
+    {
+        "name": "Vegetable Handvo",
+        "ingredients": ["rice", "besan", "carrot", "peas", "cumin", "salt"],
+        "instructions": "Make handvo batter, add veggies, bake until cooked.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Vegetable+Handvo"
+    },
+    {
+        "name": "Pumpkin Paratha",
+        "ingredients": ["wheat flour", "pumpkin", "salt", "ghee"],
+        "instructions": "Mix flour and pumpkin, roll parathas, cook with ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Pumpkin+Paratha"
+    },
+    {
+        "name": "Vegetable Appe",
+        "ingredients": ["rice", "urad dal", "carrot", "peas", "cumin", "salt"],
+        "instructions": "Make appe batter, add veggies, cook in appe pan.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Vegetable+Appe"
+    },
+    {
+        "name": "Spinach Poha",
+        "ingredients": ["poha", "spinach", "cumin", "turmeric", "salt", "ghee"],
+        "instructions": "Cook poha with spinach and spices, finish with ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Spinach+Poha"
+    },
+    {
+        "name": "Vegetable Upma",
+        "ingredients": ["semolina", "carrot", "peas", "cumin", "salt", "ghee"],
+        "instructions": "Cook semolina with veggies and spices, finish with ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Vegetable+Upma"
+    },
+    {
+        "name": "Pumpkin Uttapam",
+        "ingredients": ["rice", "urad dal", "pumpkin", "salt"],
+        "instructions": "Make uttapam batter, add pumpkin, cook on skillet.",
+        "diet": "vegan",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Pumpkin+Uttapam"
+    },
+    {
+        "name": "Vegetable Paratha",
+        "ingredients": ["wheat flour", "carrot", "peas", "cumin", "salt", "ghee"],
+        "instructions": "Mix flour and veggies, roll parathas, cook with ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Vegetable+Paratha"
+    },
+    {
+        "name": "Spinach Thepla",
+        "ingredients": ["wheat flour", "spinach", "cumin", "turmeric", "salt", "ghee"],
+        "instructions": "Mix flour and spinach, roll theplas, cook with ghee.",
+        "diet": "vegetarian",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Spinach+Thepla"
+    },
+    {
+        "name": "Vegetable Rice Balls",
+        "ingredients": ["rice", "carrot", "peas", "cumin", "salt", "ghee"],
+        "instructions": "Mix rice and veggies, shape balls, cook with ghee.",
+        "diet": "vegetarian",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Vegetable+Rice+Balls"
+    },
+    {
+        "name": "Pumpkin Cutlet",
+        "ingredients": ["pumpkin", "potato", "bread crumbs", "salt", "pepper", "ghee"],
+        "instructions": "Mix pumpkin and potato, shape cutlets, coat with bread crumbs, cook with ghee.",
+        "diet": "vegetarian",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Pumpkin+Cutlet"
+    },
+    {
+        "name": "Vegetable Kathi Roll",
+        "ingredients": ["wheat flour", "carrot", "peas", "cumin", "salt", "ghee"],
+        "instructions": "Make roll dough, fill with veggies, cook with ghee.",
+        "diet": "vegetarian",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Vegetable+Kathi+Roll"
+    },
+    {
+        "name": "Spinach Sandwich",
+        "ingredients": ["bread", "spinach", "cheese", "butter"],
+        "instructions": "Layer spinach and cheese between bread slices, grill with butter.",
+        "diet": "vegetarian",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Spinach+Sandwich"
+    },
+    {
+        "name": "Vegetable Dosa",
+        "ingredients": ["rice", "urad dal", "carrot", "peas", "cumin", "salt"],
+        "instructions": "Make dosa batter, add veggies, cook on skillet.",
+        "diet": "vegan",
+        "mealType": "breakfast",
+        "image": "https://placehold.co/400x300?text=Vegetable+Dosa"
+    },
+    {
+        "name": "Pumpkin Bhaji",
+        "ingredients": ["pumpkin", "potato", "cumin", "turmeric", "salt", "ghee"],
+        "instructions": "Cook pumpkin and potato with spices, finish with ghee.",
+        "diet": "vegetarian",
+        "mealType": "dinner",
+        "image": "https://placehold.co/400x300?text=Pumpkin+Bhaji"
+    },
+    {
+        "name": "Vegetable Steamed Balls",
+        "ingredients": ["rice", "carrot", "peas", "cumin", "salt"],
+        "instructions": "Mix rice and veggies, shape balls, steam until cooked.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Vegetable+Steamed+Balls"
+    },
+    {
+        "name": "Spinach Salad",
+        "ingredients": ["spinach", "tomato", "cucumber", "lemon", "salt", "pepper"],
+        "instructions": "Mix spinach and veggies, add lemon juice, salt, and pepper.",
+        "diet": "vegan",
+        "mealType": "snack",
+        "image": "https://placehold.co/400x300?text=Spinach+Salad"
+    }
+]
