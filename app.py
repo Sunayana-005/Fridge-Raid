@@ -113,7 +113,7 @@ def vote():
 def serve_home():
     return app.send_static_file("home.html")
 
+init_db()
 if __name__ == "__main__":
-    init_db()
     Port = int(os.environ.get("PORT", 8000))
     app.run(host="0.0.0.0", port=Port, debug=True)
