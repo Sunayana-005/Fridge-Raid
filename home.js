@@ -1,3 +1,5 @@
+const URL = "https://fridge-raid.onrender.com"      //chnage this as needed
+
 let userIngredients = [];
 const ingredientInput = document.getElementById('ingredient-input');
 const addIngredientBtn = document.getElementById('add-ingredient-btn');
@@ -99,7 +101,7 @@ const findRecipes = () => {
     const selectedDiet = dietSelect.value;
     const selectedMealType = mealTypeSelect.value;
 
-    fetch("http://127.0.0.1:8000/recommend", {
+    fetch(`${URL}/recommend`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -159,7 +161,7 @@ const voteRecipeOnServer = async (recipeName, type) => {
     recipe_name: recipeName,
     vote_type:    type
   };
-  const res = await fetch("http://127.0.0.1:8000/vote", {
+  const res = await fetch(`${URL}/vote`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(payload),
