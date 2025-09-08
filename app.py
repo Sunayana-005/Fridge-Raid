@@ -1,4 +1,5 @@
 import json
+import os
 import sqlite3
 from flask import Flask, request, jsonify
 from flask_cors import CORS
@@ -114,4 +115,5 @@ def serve_home():
 
 if __name__ == "__main__":
     init_db()
-    app.run(host="127.0.0.1", port=8000, debug=True)
+    Port = int(os.environ.get("PORT", 8000))
+    app.run(host="0.0.0.0", port=Port, debug=True)
