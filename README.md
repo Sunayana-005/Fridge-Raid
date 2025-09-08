@@ -26,7 +26,7 @@ Fridge Raid is designed for people who:
 
 **Python:** The backend language.
 
-**FastAPI:** A modern, high-performance web framework for the backend API.
+**Flask:** A modern, high-performance web framework for the backend API.
 
 **FuzzyAI:** The core logic for intelligently matching ingredients to recipes.
 
